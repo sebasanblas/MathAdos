@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49F9723445BAA83DCA982D6B /* Pods_MathAdos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21337DE6CA32231F77F1676 /* Pods_MathAdos.framework */; };
 		CC2EAE2D267AC16D00C0BD9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2EAE2C267AC16D00C0BD9A /* AppDelegate.swift */; };
 		CC2EAE2F267AC16D00C0BD9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2EAE2E267AC16D00C0BD9A /* SceneDelegate.swift */; };
 		CC2EAE31267AC16D00C0BD9A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2EAE30267AC16D00C0BD9A /* MainViewController.swift */; };
@@ -14,9 +15,15 @@
 		CC2EAE36267AC16F00C0BD9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2EAE35267AC16F00C0BD9A /* Assets.xcassets */; };
 		CC2EAE39267AC16F00C0BD9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2EAE37267AC16F00C0BD9A /* LaunchScreen.storyboard */; };
 		CCB90926267CB1C100A1EAD5 /* Generadores.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB90925267CB1C100A1EAD5 /* Generadores.swift */; };
+		CCB90929267CB82A00A1EAD5 /* Vidas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB90928267CB82A00A1EAD5 /* Vidas.swift */; };
+		CCB9092C267D1C5F00A1EAD5 /* Nivel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9092B267D1C5F00A1EAD5 /* Nivel.swift */; };
+		CCB90985267D9FCD00A1EAD5 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB90984267D9FCD00A1EAD5 /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02D887EE06718F6AEEA20625 /* Pods-MathAdos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathAdos.debug.xcconfig"; path = "Target Support Files/Pods-MathAdos/Pods-MathAdos.debug.xcconfig"; sourceTree = "<group>"; };
+		A21337DE6CA32231F77F1676 /* Pods_MathAdos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathAdos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C06BB93C524B074DF1DDE107 /* Pods-MathAdos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathAdos.release.xcconfig"; path = "Target Support Files/Pods-MathAdos/Pods-MathAdos.release.xcconfig"; sourceTree = "<group>"; };
 		CC2EAE29267AC16D00C0BD9A /* MathAdos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathAdos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2EAE2C267AC16D00C0BD9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC2EAE2E267AC16D00C0BD9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +33,9 @@
 		CC2EAE38267AC16F00C0BD9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC2EAE3A267AC16F00C0BD9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCB90925267CB1C100A1EAD5 /* Generadores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generadores.swift; sourceTree = "<group>"; };
+		CCB90928267CB82A00A1EAD5 /* Vidas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vidas.swift; sourceTree = "<group>"; };
+		CCB9092B267D1C5F00A1EAD5 /* Nivel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel.swift; sourceTree = "<group>"; };
+		CCB90984267D9FCD00A1EAD5 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F9723445BAA83DCA982D6B /* Pods_MathAdos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2FB0FF53ACDD403D57EE5CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A21337DE6CA32231F77F1676 /* Pods_MathAdos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3E378F9E3606E4226697519 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02D887EE06718F6AEEA20625 /* Pods-MathAdos.debug.xcconfig */,
+				C06BB93C524B074DF1DDE107 /* Pods-MathAdos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CC2EAE20267AC16D00C0BD9A = {
 			isa = PBXGroup;
 			children = (
 				CC2EAE2B267AC16D00C0BD9A /* MathAdos */,
 				CC2EAE2A267AC16D00C0BD9A /* Products */,
+				C3E378F9E3606E4226697519 /* Pods */,
+				A2FB0FF53ACDD403D57EE5CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +96,9 @@
 				CC2EAE37267AC16F00C0BD9A /* LaunchScreen.storyboard */,
 				CC2EAE3A267AC16F00C0BD9A /* Info.plist */,
 				CCB90925267CB1C100A1EAD5 /* Generadores.swift */,
+				CCB90928267CB82A00A1EAD5 /* Vidas.swift */,
+				CCB9092B267D1C5F00A1EAD5 /* Nivel.swift */,
+				CCB90984267D9FCD00A1EAD5 /* Notification.swift */,
 			);
 			path = MathAdos;
 			sourceTree = "<group>";
@@ -77,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC2EAE3D267AC16F00C0BD9A /* Build configuration list for PBXNativeTarget "MathAdos" */;
 			buildPhases = (
+				314D1088158B9FD425A4EBE6 /* [CP] Check Pods Manifest.lock */,
 				CC2EAE25267AC16D00C0BD9A /* Sources */,
 				CC2EAE26267AC16D00C0BD9A /* Frameworks */,
 				CC2EAE27267AC16D00C0BD9A /* Resources */,
+				96C8913F4B17BB46EC4F3375 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,15 +170,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		314D1088158B9FD425A4EBE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathAdos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96C8913F4B17BB46EC4F3375 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MathAdos/Pods-MathAdos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MathAdos/Pods-MathAdos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MathAdos/Pods-MathAdos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CC2EAE25267AC16D00C0BD9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB9092C267D1C5F00A1EAD5 /* Nivel.swift in Sources */,
 				CC2EAE31267AC16D00C0BD9A /* MainViewController.swift in Sources */,
 				CC2EAE2D267AC16D00C0BD9A /* AppDelegate.swift in Sources */,
+				CCB90985267D9FCD00A1EAD5 /* Notification.swift in Sources */,
 				CC2EAE2F267AC16D00C0BD9A /* SceneDelegate.swift in Sources */,
 				CCB90926267CB1C100A1EAD5 /* Generadores.swift in Sources */,
+				CCB90929267CB82A00A1EAD5 /* Vidas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +367,7 @@
 		};
 		CC2EAE3E267AC16F00C0BD9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02D887EE06718F6AEEA20625 /* Pods-MathAdos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +387,7 @@
 		};
 		CC2EAE3F267AC16F00C0BD9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C06BB93C524B074DF1DDE107 /* Pods-MathAdos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
