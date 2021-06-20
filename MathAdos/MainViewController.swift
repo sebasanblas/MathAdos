@@ -8,8 +8,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    @IBAction func debug(_ sender: Any) {
-    }
+
     // Instancia
     var generadores = Generadores()
     var vidas = Vidas()
@@ -73,9 +72,7 @@ class MainViewController: UIViewController {
         contadorNivel()
         // Tiempo
         contadorTiempo()
-        
         // Comienzo
-        
         generadorProblemaField(nivel: nivel)
         
     }
@@ -146,10 +143,11 @@ class MainViewController: UIViewController {
     }
     
     func Main(input: String) {
+        timeContador()
         if input == respuestaGlobal {
             showIcon(true)
             (life, contadorvidas) = vidas.ganarVida(vidas: life, aciertos: contadorvidas)
-            (nivel, contadornivel) = niveles.avanzarNivel(nivel: nivel, aciertos: contadornivel)
+            (nivel, contadornivel, seconds) = niveles.avanzarNivel(nivel: nivel, aciertos: contadornivel, segundos: seconds)
         }
         else {
             showIcon(false)
@@ -160,7 +158,16 @@ class MainViewController: UIViewController {
         }
         contadorVidas()
         contadorNivel()
+        contadorTiempo()
         generadorProblemaField(nivel: nivel)
+    }
+    
+    func updateTimeLabel() {
+
+        let min = (seconds / 60) % 60
+        let sec = seconds % 60
+
+        timeField?.text = String(format: "%02d", min) + ":" + String(format: "%02d", sec)
     }
 
 }
@@ -186,9 +193,32 @@ extension MainViewController {
     }
     
     func finishGame() {
-        // Matar tiempo
+        timer?.invalidate()
+        timer = nil
+        
         notificacion.endGame(nivel: nivel)
+        generadorProblemaField(nivel: nivel)
+
         nivel = 1
         life = 3
+        seconds = 60
+        
+        contadorVidas()
+        contadorNivel()
+        contadorTiempo()
+    }
+    
+    func timeContador() {
+        if timer == nil {
+            timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+                
+                if self.seconds == 0 {
+                    self.finishGame()
+                } else if self.seconds > 0 {
+                    self.seconds -= 1
+                    self.updateTimeLabel()
+                }
+            }
+        }
     }
 }
