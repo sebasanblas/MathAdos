@@ -18,6 +18,7 @@
 		CCB90929267CB82A00A1EAD5 /* Vidas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB90928267CB82A00A1EAD5 /* Vidas.swift */; };
 		CCB9092C267D1C5F00A1EAD5 /* Nivel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9092B267D1C5F00A1EAD5 /* Nivel.swift */; };
 		CCB90985267D9FCD00A1EAD5 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB90984267D9FCD00A1EAD5 /* Notification.swift */; };
+		CCB9098B268008C400A1EAD5 /* Capturas in Resources */ = {isa = PBXBuildFile; fileRef = CCB9098A268008C400A1EAD5 /* Capturas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		CCB90928267CB82A00A1EAD5 /* Vidas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vidas.swift; sourceTree = "<group>"; };
 		CCB9092B267D1C5F00A1EAD5 /* Nivel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel.swift; sourceTree = "<group>"; };
 		CCB90984267D9FCD00A1EAD5 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		CCB9098A268008C400A1EAD5 /* Capturas */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Capturas; sourceTree = "<group>"; };
+		CCB9098D268008FC00A1EAD5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 		CC2EAE20267AC16D00C0BD9A = {
 			isa = PBXGroup;
 			children = (
+				CCB9098D268008FC00A1EAD5 /* README.md */,
+				CCB9098A268008C400A1EAD5 /* Capturas */,
 				CC2EAE2B267AC16D00C0BD9A /* MathAdos */,
 				CC2EAE2A267AC16D00C0BD9A /* Products */,
 				C3E378F9E3606E4226697519 /* Pods */,
@@ -165,6 +170,7 @@
 				CC2EAE39267AC16F00C0BD9A /* LaunchScreen.storyboard in Resources */,
 				CC2EAE36267AC16F00C0BD9A /* Assets.xcassets in Resources */,
 				CC2EAE34267AC16D00C0BD9A /* Main.storyboard in Resources */,
+				CCB9098B268008C400A1EAD5 /* Capturas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
