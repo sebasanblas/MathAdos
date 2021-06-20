@@ -10,8 +10,11 @@ import Foundation
 class Nivel {
     
     func avanzarNivel(nivel: Int,
-                      aciertos: Int) -> (nivelNuevo: Int,
-                                              contador: Int){
+                      aciertos: Int,
+                      segundos: Int) -> (nivelNuevo: Int,
+                                              contador: Int,
+                                              segundosNuevos: Int){
+        var segundosNuevos = segundos
         var nivelNuevo = nivel
         var contador = aciertos
         
@@ -22,8 +25,9 @@ class Nivel {
             nivelNuevo += 1
             print("Subiendo de nivel")
             contador = 0
+            segundosNuevos += 60
         }
-        return (nivelNuevo, contador)
+        return (nivelNuevo, contador, segundosNuevos)
     }
         
 }
