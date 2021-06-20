@@ -14,7 +14,6 @@ class Notificacion {
         let messageView: MessageView = MessageView.viewFromNib(layout: .centeredView)
         messageView.configureBackgroundView(width: 350)
         messageView.configureContent(title: "Hey!", body: "Lograste llegar al nivel \(nivel).", iconImage: nil, iconText: "👻", buttonImage: nil, buttonTitle: "¡Jugar de vuelta!") { _ in
-            print("Seba")
             SwiftMessages.hide()
         }
         messageView.backgroundView.backgroundColor = UIColor.init(white: 0.97, alpha: 1)
